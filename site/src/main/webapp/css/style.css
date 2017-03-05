@@ -13,13 +13,16 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
-body { margin: 0; font: 12px/18px Georgia, serif; color: #655c5a; background: url(../img/canvas.jpg) repeat; }
+body {
+margin: 0; font: 12px/18px Georgia, serif; color: #655c5a;
+/*background: url(../img/canvas.jpg) repeat; */
+}
 
 ::-moz-selection { background: #E40037; color: #fff; text-shadow: none; }
 ::selection { background: #E40037; color: #fff; text-shadow: none; }
 
 a { color: #E40037; } 
-a:visited { color: #E40037; }
+/*a:visited { color: #E40037; }*/
 a:hover { color: #3e0000; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
@@ -270,7 +273,7 @@ header {
 
 #header_content_fixed {
     border-bottom: 15px solid #E40037;
-    background: url(../img/canvas.jpg) repeat;
+    /*background: url(../img/canvas.jpg) repeat;*/
     width: 100%;
     position: fixed;
     top: 0;
@@ -323,6 +326,7 @@ header {
 #header_content #logo, #header_content_checkout #logo {
     width: 299px;
     height: 101px;
+    top: 20px;
     display: block;
     z-index: 50;
     position: relative;
@@ -331,7 +335,7 @@ header {
     #header_content #logo h1, #header_content_checkout #logo h1 {
         width: 299px;
         height: 101px;
-        background: url('../img/the-heat-clinic-logo-internal.png') top left no-repeat;
+        background: url('../img/bentonia-logo.png') top left no-repeat;
         text-indent: -9999px;
         margin-top: -5px;
         display: block;
@@ -366,6 +370,14 @@ header {
         background: url(../img/search-button.png) top left no-repeat;
         text-indent: -5555px;
         display: inline;
+    }
+
+    #header_content #contactus {
+        position: absolute;
+        top: 60px;
+        height: 22px;
+        right: 0;
+        padding-right: 250px;
     }
 
     #header_content #cart_info {
@@ -418,6 +430,7 @@ nav {
     width: 940px;
     height: 70px;
     margin: 0 20px;
+    background-color: #E40037;
     border-bottom: double #C8C3C1;
 }
 
@@ -438,7 +451,7 @@ nav {
     nav ul li a {
         font: 16px/76px 'Open Sans', Helvetica, sans-serif;
         font-weight: 600;
-        color: #342020;
+        color: white;
         padding: 25px 30px;
         background: url('../img/nav-divider.png') top left no-repeat;
     }
@@ -452,17 +465,16 @@ nav {
     }
         
         nav ul li a:link, nav ul li a:visited {
-            color: #342020;
             text-decoration: none;
             text-transform: uppercase;
         }
         
         nav ul li a:hover {
-            background-color: #E7E3E2;
+            background-color: #F40037;
             -webkit-transition: background-color 0.2s ease-in;  
             -moz-transition: background-color 0.2s ease-in;  
             -o-transition: background-color 0.2s ease-in;  
-            transition: background-color 0.2s ease-in; 
+            transition: background-color 0.2s ease-in;
         }
 
     nav ul li:hover .sub-menu {
@@ -476,7 +488,7 @@ nav {
         z-index: 99999;
         display: none;
         width: 174px;
-        top:179px;
+        top:10px;
         border-left: 1px solid #C8C3C1;
         border-bottom: 1px solid #C8C3C1;
         border-right: 1px solid #C8C3C1;
@@ -629,7 +641,7 @@ nav {
     padding: 0;
 }
 
-#account #register, #account #login, #account #forgotPassword, #account #resetPassword, #contactus {
+#account #register, #account #login, #account #forgotPassword, #account #resetPassword {
     width: 282px;
     margin: 10px auto;
     padding: 20px;
@@ -2047,6 +2059,7 @@ and (max-width : 480px) {
         margin: 5px 0;
         padding: 0;
         display: block;
+        color: white;
     }
     
         nav ul {
@@ -2505,7 +2518,9 @@ and (max-width : 480px) {
 
 #cart_promo #promoCode {margin-left: 0;}
 
-#header_content_fixed {border-bottom: 3px solid #E40037;}
+#header_content_fixed {
+background-color: white;
+border-bottom: 3px solid #E40037;}
 #header_content_checkout {width: 100%;}
 #header_content_checkout #checkout_info {width: 100%; margin: 0;}
 #checkout_content {width: 100%; margin-top: 50px;}

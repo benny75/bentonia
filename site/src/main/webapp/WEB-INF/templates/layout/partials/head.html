@@ -1,14 +1,18 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title th:unless="${pageTitle == 'TEMPLATE'}" th:utext="${#strings.isEmpty(pageTitle) ? 'Broadleaf Demo - Heat Clinic' : pageTitle}"></title>
+    <!-- Compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />-->
+    <!-- Compiled and minified JavaScript -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>-->
+    <title th:unless="${pageTitle == 'TEMPLATE'}" th:utext="${#strings.isEmpty(pageTitle) ? 'Bentonia - Bento to your office' : pageTitle}"></title>
     
     <title th:if="${pageTitle == 'TEMPLATE'}" th:remove="tag">
         <title th:inline="text" th:include="${templateName} :: title" />
     </title>
     
-    <meta name="description" content="Broadleaf Demo Store" />
-    <meta name="author" content="Broadleaf Commerce" />
+    <meta name="description" content="Bentonia webshop" />
+    <meta name="author" content="Canary Studio Ltd." />
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />   
     <meta name="viewport" content="width=device-width" />

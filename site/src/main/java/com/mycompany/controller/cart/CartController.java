@@ -107,7 +107,7 @@ public class CartController extends BroadleafCartController {
         
         return responseMap;
     }
-    
+
     /*
      * The Heat Clinic does not support adding products with required product options from a category browse page
      * when JavaScript is disabled. When this occurs, we will redirect the user to the full product details page 
@@ -123,7 +123,7 @@ public class CartController extends BroadleafCartController {
             return "redirect:" + product.getUrl();
         }
     }
-    
+
     @RequestMapping("/updateQuantity")
     public String updateQuantity(HttpServletRequest request, HttpServletResponse response, Model model, RedirectAttributes redirectAttributes,
             @ModelAttribute("addToCartItem") AddToCartItem addToCartItem) throws IOException, PricingException, UpdateCartException, RemoveFromCartException {
